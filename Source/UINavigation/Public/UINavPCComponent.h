@@ -124,8 +124,7 @@ protected:
 
 	void CallCustomInput(const FName ActionName, const bool bPressed);
 
-	UFUNCTION()
-	void OnControllerConnectionChanged(bool bConnected, int32 UserId, int32 UserIndex);
+	void OnControllerConnectionChanged(bool bConnected, FPlatformUserId UserId, int32 UserIndex);
 
 public:
 
